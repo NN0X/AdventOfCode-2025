@@ -39,7 +39,7 @@ void process(int* zeros, int* counter, char* line)
 
 int main()
 {
-        FILE* file = fopen("../../inputs/day1-1", "r");
+        FILE* file = fopen("../../inputs/day1", "r");
         if (file == NULL)
         {
                 return 1;
