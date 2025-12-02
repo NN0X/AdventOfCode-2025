@@ -2,7 +2,7 @@
 
 ## Day 1 - C \[DONE\]
 
-## Day 2 - Rust
+## Day 2 - Rust \[DONE\]
 
 ## Day 3 - Zig
 
