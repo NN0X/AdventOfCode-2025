@@ -4,9 +4,9 @@
 
 ### Day 2 - Rust \[DONE\]
 
-### Day 3 - Go
+### Day 3 - Go \[DONE\]
 
-### Day 4 - Zig
+### Day 4 - x86 Intel Assembly - maybe
 
 ### Day 5 - Java
 
@@ -23,6 +23,19 @@
 ### Day 11 - Python
 
 ### Day 12 - C++
+
+## Thoughts
+### C
+I love C.
+
+### Rust
+Better than expected. Felt very intuitive for simple tasks.
+
+### Zig
+Unusable. Even reading a file feels like black magic.
+
+### Go
+Exquisite. For the first time using it, it was very intuitive and productive.
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
