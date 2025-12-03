@@ -4,9 +4,9 @@
 
 ### Day 2 - Rust \[DONE\]
 
-### Day 3 - Zig
+### Day 3 - Go
 
-### Day 4 - Go
+### Day 4 - Zig
 
 ### Day 5 - Java
 
