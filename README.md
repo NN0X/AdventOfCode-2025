@@ -2,23 +2,23 @@
 
 ### Day 1 - C \[DONE\]
 
-task1: 0,00s user 0,00s system 45% cpu 0,002 total
-task2: 0,00s user 0,00s system 38% cpu 0,001 total
+- task1: 0,00s user 0,00s system 45% cpu 0,002 total
+- task2: 0,00s user 0,00s system 38% cpu 0,001 total
 
 ### Day 2 - Rust \[DONE\]
 
-task1: 0,05s user 0,00s system 96% cpu 0,058 total
-task2: 0,13s user 0,00s system 96% cpu 0,141 total
+- task1: 0,05s user 0,00s system 96% cpu 0,058 total
+- task2: 0,13s user 0,00s system 96% cpu 0,141 total
 
 ### Day 3 - Go \[DONE\]
 
-task1: 0,00s user 0,00s system 66% cpu 0,002 total
-task2: 0,00s user 0,00s system 84% cpu 0,002 total
+- task1: 0,00s user 0,00s system 66% cpu 0,002 total
+- task2: 0,00s user 0,00s system 84% cpu 0,002 total
 
 ### Day 4 - Linux x86-64 NASM Assembly - instead of Zig \[DONE\]
 
-task1: 0,00s user 0,00s system 76% cpu 0,001 total
-task2: 0,01s user 0,00s system 96% cpu 0,009 total
+- task1: 0,00s user 0,00s system 76% cpu 0,001 total
+- task2: 0,01s user 0,00s system 96% cpu 0,009 total
 
 ### Day 5 - Java
 
