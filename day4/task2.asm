@@ -1,4 +1,4 @@
-; nasm -f elf64 task1.asm && ld task1.o -o task1 && ./task1
+; nasm -f elf64 task2.asm && ld task2.o -o task2 && ./task2
 
 section .data
 filename: db "../inputs/day4", 0
