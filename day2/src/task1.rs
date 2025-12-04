@@ -22,6 +22,7 @@ fn compute_repetitions(begin: u64, end: u64) -> Vec<u64>
 
 fn main()
 {
+        // INFO: input has to have , at the end
         let data = fs::read_to_string("../inputs/day2").expect("Unable to read file");
 
         let mut ranges = Vec::new();
