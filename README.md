@@ -6,7 +6,7 @@
 
 ### Day 3 - Go \[DONE\]
 
-### Day 4 - Linux x86-64 Intel Assembly - instead of Zig
+### Day 4 - Linux x86-64 NASM Assembly - instead of Zig
 
 ### Day 5 - Java
 
