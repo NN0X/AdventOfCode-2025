@@ -37,7 +37,7 @@
 
 ### Day 11 - TypeScript
 
-### Day 12 - C++
+### Day 12 - Lua
 
 ## Thoughts
 ### C
