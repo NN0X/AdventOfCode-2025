@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"nox"
+	],
+	"copyright": "Copyright © 2025, nox",
+	"description": "A minimal D application.",
+	"license": "MIT",
+	"name": "task2"
+}

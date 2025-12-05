@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/task1
+task1.so
+task1.dylib
+task1.dll
+task1.a
+task1.lib
+task1-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
