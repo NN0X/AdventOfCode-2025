@@ -20,19 +20,19 @@
 - task1: 0,00s user 0,00s system 76% cpu 0,001 total
 - task2: 0,01s user 0,00s system 96% cpu 0,009 total
 
-### Day 5 - Java
+### Day 5 - D
 
-### Day 6 - TypeScript
+### Day 6 - Carbon
 
-### Day 7 - Carbon
+### Day 7 - Haskell
 
-### Day 8 - C#
+### Day 8 - Swift
 
 ### Day 9 - Elixir
 
 ### Day 10 - Odin
 
-### Day 11 - Python
+### Day 11 - TypeScript
 
 ### Day 12 - C++
 
