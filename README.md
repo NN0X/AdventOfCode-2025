@@ -3,7 +3,11 @@
 This repository contains my solutions for the [Advent of Code 2025](https://adventofcode.com/2025) event.
 
 ## Goal
-My goal for AoC 2025 is to solve each day's puzzles using a different programming language. Note that from selected languages the only one I've used before for actual programming is C and Assembly (not NASM syntax though) and the only language that I actually feel comfortable with is C. All other languages I will be using for the first time or my experience with them is limited to seeing some code snippets online. The code quality will likely be poor for most languages as I want to finish puzzles the same day they are released and there will be little or no optimization or refactoring. Basically I want to have fun with new languages.
+My goal for AoC 2025 is to solve each day's puzzles using a different programming language. \
+Note that from selected languages the only one I've used before for actual programming is C and Assembly (not NASM syntax though) and the only language that I actually feel comfortable with is C. \
+All other languages I will be using for the first time or my experience with them is limited to seeing some code snippets online. \
+The code quality will likely be poor for most languages as I want to finish puzzles the same day they are released and there will be little or no optimization or refactoring. \
+Basically I want to have fun with new languages.
 
 ## Plan
 
