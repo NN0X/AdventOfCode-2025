@@ -25,7 +25,7 @@
 - task1: 0,00s user 0,00s system 89% cpu 0,004 total
 - task2: 0,00s user 0,00s system 75% cpu 0,005 total
 
-### Day 6 - Carbon
+### Day 6 - Kotlin
 
 ### Day 7 - Haskell
 
