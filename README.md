@@ -1,3 +1,10 @@
+# Advent of Code 2025
+
+This repository contains my solutions for the [Advent of Code 2025](https://adventofcode.com/2025) event.
+
+## Goal
+My goal for AoC 2025 is to solve each day's puzzles using a different programming language. Note that from selected languages the only one I've used before for actual programming is C and Assembly (not NASM syntax though) and the only language that I actually feel comfortable with is C. All other languages I will be using for the first time or my experience with them is limited to seeing some code snippets online. The code quality will likely be poor for most languages as I want to finish puzzles the same day they are released and there will be little or no optimization or refactoring. Basically I want to have fun with new languages.
+
 ## Plan
 
 ### Day 1 - C \[DONE\]
@@ -25,7 +32,10 @@
 - task1: 0,00s user 0,00s system 89% cpu 0,004 total
 - task2: 0,00s user 0,00s system 75% cpu 0,005 total
 
-### Day 6 - Kotlin
+### Day 6 - Kotlin \[DONE\]
+
+- task1: 0,04s user 0,02s system 155% cpu 0,038 total
+- task2: 0,07s user 0,01s system 206% cpu 0,039 total
 
 ### Day 7 - Haskell
 
@@ -57,6 +67,9 @@ After a workday and writing this I am too tired to think. Still easier to read f
 
 ### D
 Better C++?
+
+### Kotlin
+I hate use of var and val keywords and the fact that you can't do reverse for loops with eg. for (i in 100..0).
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
