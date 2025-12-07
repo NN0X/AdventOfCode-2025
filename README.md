@@ -7,6 +7,7 @@ My goal for AoC 2025 is to solve each day's puzzles using a different programmin
 Note that from selected languages the only one I've used before for actual programming is C and Assembly (not NASM syntax though) and the only language that I actually feel comfortable with is C. \
 All other languages I will be using for the first time or my experience with them is limited to seeing some code snippets online. \
 The code quality will likely be poor for most languages as I want to finish puzzles the same day they are released and there will be little or no optimization or refactoring. \
+It's possible that for some languages I will be using LLMs, but NEVER for coming up with a solution. \
 Basically I want to have fun with new languages.
 
 ## Plan
@@ -41,7 +42,10 @@ Basically I want to have fun with new languages.
 - task1: 0,04s user 0,02s system 155% cpu 0,038 total
 - task2: 0,07s user 0,01s system 206% cpu 0,039 total
 
-### Day 7 - Haskell
+### Day 7 - Haskell \[DONE\]
+
+- task1: 0,02s user 0,00s system 93% cpu 0,024 total
+- task2: 0,11s user 0,03s system 93% cpu 0,146 total
 
 ### Day 8 - Swift
 
@@ -74,6 +78,9 @@ Better C++?
 
 ### Kotlin
 I hate use of var and val keywords and the fact that you can't do reverse for loops with eg. for (i in 100..0).
+
+### Haskell
+It's interesting. Unfortunately I was drinking when programming, which in most languages is not a problem, but in this case happened to be one. I came up with a good solution for task 2, made a programming error and went down a spiral of overthinking the puzzle. Long story short, Haskell feels ok, but not for a one day challange. Couldn't do it without slight help from Gemini.
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
