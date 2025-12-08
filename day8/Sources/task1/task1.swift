@@ -1,40 +1,121 @@
 import Foundation
 import Numerics
 
-struct Point3D
+struct Point3D : Equatable, Hashable
 {
+        var id = 0
         var x = 0
         var y = 0
         var z = 0
 
-        init(_ x: Int, _ y: Int, _ z: Int)
+        init(_ id: Int, _ x: Int, _ y: Int, _ z: Int)
         {
+                self.id = id
                 self.x = x
                 self.y = y
                 self.z = z
         }
 }
 
-func getDistance(a: Point3D, b: Point3D) -> Int
+struct Point3DPair : Hashable
 {
-        let x2 = pow(a.x - b.x, 2)
-        let y2 = pow(a.y - b.y, 2)
-        let z2 = pow(a.z - b.z, 2)
+        let pointA: Int
+        let pointB: Int
+        let distance: Double
+
+        func hash(into hasher: inout Hasher)
+        {
+                let minPoint = min(pointA, pointB)
+                let maxPoint = max(pointA, pointB)
+                hasher.combine(minPoint)
+                hasher.combine(maxPoint)
+        }
+
+        static func ==(lhs: Point3DPair, rhs: Point3DPair) -> Bool
+        {
+                return (lhs.pointA == rhs.pointA && lhs.pointB == rhs.pointB) ||
+                (lhs.pointA == rhs.pointB && lhs.pointB == rhs.pointA)
+        }
+}
+
+func getDistance(a: Point3D, b: Point3D) -> Double
+{
+        let x2 = pow(Double(a.x - b.x), 2)
+        let y2 = pow(Double(a.y - b.y), 2)
+        let z2 = pow(Double(a.z - b.z), 2)
         let distance = sqrt(x2 + y2 + z2)
 
         return distance
 }
 
+func sortDistances(distances: Set<Point3DPair>) -> [Point3DPair]
+{
+        let sorted = distances.sorted
+                {
+                        (pairA, pairB) -> Bool in
+                        return pairA.distance < pairB.distance
+                }
+
+        return sorted
+}
+
+func mergeConnections(connections: [[Int]]) -> [[Int]]
+{
+        var groups = connections
+        var mergedSomething = true
+
+        while mergedSomething
+        {
+                mergedSomething = false
+                var newGroups: [[Int]] = []
+                var used = Array(repeating: false, count: groups.count)
+
+                for i in 0..<groups.count
+                {
+                        if used[i]
+                        {
+                                continue
+                        }
+
+                        var current = groups[i]
+                        for j in (i + 1)..<groups.count
+                        {
+                                if used[j]
+                                {
+                                        continue
+                                }
+
+                                let matchCount = Set(current).intersection(groups[j]).count
+
+                                if matchCount >= 1
+                                {
+                                        current = Array(Set(current).union(groups[j]))
+                                        used[j] = true
+                                        mergedSomething = true
+                                }
+                        }
+
+                        used[i] = true
+                        newGroups.append(current)
+                }
+
+                groups = newGroups
+        }
+
+        return groups
+}
+
 @main
 struct task1
 {
-
         static func main()
         {
+                let N = 1000
+
                 var data = ""
                 do
                 {
-                        data = try String(contentsOfFile: "test", encoding: .utf8)
+                        data = try String(contentsOfFile: "../inputs/day8", encoding: .utf8)
                 }
                 catch
                 {
@@ -45,6 +126,7 @@ struct task1
                 let lines = data.components(separatedBy: "\n")
                 var points: [Point3D] = []
 
+                var id = 0
                 for line in lines.dropLast()
                 {
                         let lineArr = line.components(separatedBy: ",")
@@ -56,7 +138,49 @@ struct task1
                                 continue
                         }
 
-                        points.append(Point3D(x, y, z))
+                        points.append(Point3D(id, x, y, z))
+                        id+=1
                 }
+
+                var distances: Set<Point3DPair> = []
+
+                for i in 0..<points.count
+                {
+                        for j in (i + 1)..<points.count
+                        {
+                                let pointA = points[i]
+                                let pointB = points[j]
+                                let distance = getDistance(a: pointA, b: pointB)
+                                distances.insert(Point3DPair(pointA: pointA.id, pointB: pointB.id, distance: distance))
+                        }
+                }
+
+                let sortedDistances = sortDistances(distances: distances)
+                var connections: [[Int]] = []
+
+                var counter = 0
+                for pair in sortedDistances
+                {
+                        if counter == N
+                        {
+                                break
+                        }
+                        let pointA = pair.pointA
+                        let pointB = pair.pointB
+                        connections.append([pointA, pointB])
+                        counter+=1
+                }
+
+                let circuits = mergeConnections(connections: connections)
+
+                let circuitsSorted = circuits.sorted
+                {
+                        (groupA, groupB) -> Bool in
+                        return groupA.count > groupB.count
+
+                }
+
+                let largest3Multiplied = circuitsSorted[0].count * circuitsSorted[1].count * circuitsSorted[2].count
+                print(largest3Multiplied)
         }
 }
