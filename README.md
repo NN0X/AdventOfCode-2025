@@ -86,7 +86,7 @@ I hate use of var and val keywords and the fact that you can't do reverse for lo
 It's interesting. Unfortunately I was drinking when programming, which in most languages is not a problem, but in this case happened to be one. I came up with a good solution for task 2, made a programming error and went down a spiral of overthinking the puzzle. Long story short, Haskell feels ok, but not for a one day challange. Couldn't do it without slight help from Gemini.
 
 ### Swift
-Suprisingly syntax is somewhat similar to Go. Didn't like the @main struct way of defining entry point and the fact that math library is not included by default or even importable from standard library. Unfortunately, although I came up with a general solution for task 2, I would not be able to implement it today in a way that it would work in a reasonable time, so I gave Gemini my unoptimized mess of a merging function and it suggested the correct approach with DSU.
+Suprisingly syntax is somewhat similar to Kotlin. Didn't like the @main struct way of defining entry point and the fact that math library is not included by default or even importable from standard library. Unfortunately, although I came up with a general solution for task 2, I would not be able to implement it today in a way that it would work in a reasonable time, so I gave Gemini my unoptimized mess of a merging function and it suggested the correct approach with DSU.
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
