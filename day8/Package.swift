@@ -15,5 +15,11 @@ let package = Package(
                 .product(name: "Numerics", package: "swift-numerics")
             ]
         ),
+        .executableTarget(
+            name: "task2",
+            dependencies: [
+                .product(name: "Numerics", package: "swift-numerics")
+            ]
+        ),
     ]
 )
