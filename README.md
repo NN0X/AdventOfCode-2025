@@ -52,7 +52,10 @@ Basically I want to have fun with new languages.
 - task1: 0,14s user 0,01s system 99% cpu 0,155 total
 - task2: 0,24s user 0,01s system 99% cpu 0,258 total
 
-### Day 9 - Elixir
+### Day 9 - Elixir \[DONE\]
+
+- task1: 1,33s user 0,13s system 345% cpu 0,421 total
+- task2: 3,82s user 0,16s system 135% cpu 2,947 total
 
 ### Day 10 - Odin
 
@@ -87,6 +90,9 @@ It's interesting. Unfortunately I was drinking when programming, which in most l
 
 ### Swift
 Suprisingly syntax is somewhat similar to Kotlin. Didn't like the @main struct way of defining entry point and the fact that math library is not included by default or even importable from standard library. Unfortunately, although I came up with a general solution for task 2, I would not be able to implement it today in a way that it would work in a reasonable time, so I gave Gemini my unoptimized mess of a merging function and it suggested the correct approach with DSU.
+
+### Elixir
+Immutability is still weird for me. I don't like the weird pipe syntax and defmodule thing. I wasted around 2h trying to figure out DFS from scratch, because I didn't see that points are in order. Raycasting for the win.
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
