@@ -57,7 +57,10 @@ Basically I want to have fun with new languages.
 - task1: 1,33s user 0,13s system 345% cpu 0,421 total
 - task2: 3,82s user 0,16s system 135% cpu 2,947 total
 
-### Day 10 - Odin
+### Day 10 - Odin \[DONE\]
+
+- task1: 0,04s user 0,00s system 98% cpu 0,040 total
+- task2: 0,01s user 0,00s system 94% cpu 0,019 total
 
 ### Day 11 - TypeScript
 
@@ -93,6 +96,9 @@ Suprisingly syntax is somewhat similar to Kotlin. Didn't like the @main struct w
 
 ### Elixir
 Immutability is still weird for me. I don't like the weird pipe syntax and defmodule thing. I wasted around 2h trying to figure out DFS from scratch, because I didn't see that points are in order. Raycasting for the win.
+
+### Odin
+Usable Zig. Some syntax choices are interesting, but overall was very intuitive and feature complete. Thank god binding C libraries is trivially easy so using GLPK for the Simplex was possible.
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
