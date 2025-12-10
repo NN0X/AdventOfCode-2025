@@ -65,7 +65,7 @@ getFewestButtonPressesPerLight :: proc(lights : []u16, buttons : [][dynamic]u16)
         result = make([dynamic]u64, 0, 200)
         for i := 0; i < len(lights); i += 1
         {
-                light   := lights[i]
+                light := lights[i]
                 buttonSet := buttons[i]
 
                 presses := getFewestButtonPresses(light, buttonSet[:])
