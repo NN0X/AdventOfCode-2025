@@ -62,7 +62,10 @@ Basically I want to have fun with new languages.
 - task1: 0,04s user 0,00s system 98% cpu 0,040 total
 - task2: 0,01s user 0,00s system 94% cpu 0,019 total
 
-### Day 11 - Ada
+### Day 11 - Ada \[DONE\]
+
+- task1: 0,01s user 0,00s system 91% cpu 0,015 total
+- task2: 0,01s user 0,00s system 95% cpu 0,010 total
 
 ### Day 12 - Lua
 
@@ -99,6 +102,9 @@ Immutability is still weird for me. I don't like the weird pipe syntax and defmo
 
 ### Odin
 Usable Zig. Some syntax choices are interesting, but overall was very intuitive and feature complete. Thank god binding C libraries is trivially easy so using GLPK for the Simplex was possible.
+
+### Ada
+Syntax is abysmal. Why does capitalization not matter? WHY?
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
