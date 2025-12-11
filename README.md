@@ -62,7 +62,7 @@ Basically I want to have fun with new languages.
 - task1: 0,04s user 0,00s system 98% cpu 0,040 total
 - task2: 0,01s user 0,00s system 94% cpu 0,019 total
 
-### Day 11 - TypeScript
+### Day 11 - Ada
 
 ### Day 12 - Lua
 
