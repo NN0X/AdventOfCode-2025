@@ -106,5 +106,8 @@ Usable Zig. Some syntax choices are interesting, but overall was very intuitive 
 ### Ada
 Syntax is abysmal. Why does capitalization not matter? WHY?
 
+## Goal for next year AoC
+Use new languages until the first hard problem and then switch to C++. No LLMs this time. Focus on optimization.
+
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
