@@ -2,9 +2,13 @@
 
 This repository contains my solutions for the [Advent of Code 2025](https://adventofcode.com/2025) event.
 
+![](finished.png)
+
 ## Goal
 My goal for AoC 2025 is to solve each day's puzzles using a different programming language. \
-Note that from selected languages the only one I've used before for actual programming is C and Assembly (not NASM syntax though) and the only language that I actually feel comfortable with is C EDIT: Changed Lua to C++ for day 12. \
+Note that from selected languages the only one I've used before for actual programming is C and Assembly (not NASM syntax though) and the only language that I actually feel comfortable with is C \
+EDIT: Changed Lua to C++ for day 12. EDIT 2: Nice. Found out that solving the example case is harder than the actual case \
+so I rewrote the solution from C++ to Lua.\
 All other languages I will be using for the first time or my experience with them is limited to seeing some code snippets online. \
 The code quality will likely be poor for most languages as I want to finish puzzles the same day they are released and there will be little or no optimization or refactoring. \
 It's possible that for some languages I will be using LLMs, but NEVER for coming up with a solution. \
@@ -67,7 +71,9 @@ Basically I want to have fun with new languages.
 - task1: 0,01s user 0,00s system 91% cpu 0,015 total
 - task2: 0,01s user 0,00s system 95% cpu 0,010 total
 
-### Day 12 - C++
+### Day 12 - Lua \[DONE\]
+
+- task1: 0,00s user 0,00s system 95% cpu 0,005 total
 
 ## Thoughts
 ### C
@@ -107,7 +113,7 @@ Usable Zig. Some syntax choices are interesting, but overall was very intuitive 
 Syntax is abysmal. Why does capitalization not matter? WHY?
 
 ### Lua
-Felt good, but I needed more low level aproach and language I am familiar with to do day 12.
+Felt good, but I needed more low level aproach and language I am familiar with to do day 12. EDIT: AoC creator is a funny guy.
 
 ## License
 This repository is licensed under the [MIT License](LICENSE.md).
